@@ -60,7 +60,7 @@
                 <div class="car-item-point">
                    <img src="../assets/img/transmission.png" alt="transmission">
                    <div>Коробка</div>
-                   <div>а{{car.transmission}}</div>
+                   <div>{{car.transmission}}</div>
                 </div>
                 <div class="car-item-point">
                    <img src="../assets/img/wheel.png" alt="Wheel">
@@ -91,7 +91,7 @@
           <input type="text" class="price-input" id="name" placeholder="Ваше имя" formControlName="name">
           <input type="text" class="price-input" id="phone" placeholder="Ваш телефон" formControlName="phone">
           <input type="text" class="price-input" id="car" placeholder="Автомобиль, который вас интересует" formControlName="car">
-          <button class="button" type="button" id="price-action" (click)="onSubmit()" [disabled] ="!.priceForm.valid">Узнать цену</button>
+          <button class="button" type="button" id="price-action" (click)="onSubmit()" [disabled] ="priceForm.valid">Узнать цену</button>
        </form>
        <img src="../assets/images/rolls.png" alt="Rolls" class="price-image" [ngStyle]="trans">
     </div>
